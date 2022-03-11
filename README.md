@@ -7,7 +7,7 @@ The goal of sRNAGenetic is to analysis the expression changes of sRNA after plan
 You can install the development version of sRNAGenetic like so:
 
 ``` r
-BiocManager::install("sRNAGenetic")
+githubinstall("sRNAGenetic")
 ```
 
 Loading the R package: sRNAGenetic
