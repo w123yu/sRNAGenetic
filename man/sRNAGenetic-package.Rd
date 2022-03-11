@@ -4,12 +4,12 @@
 \name{sRNAGenetic-package}
 \alias{sRNAGenetic}
 \alias{sRNAGenetic-package}
-\title{sRNAGenetic: Analysis of sRNA expression changes during plant polyploidization}
+\title{sRNAGenetic: Analysis of sRNA Expression Changes During Plant Polyploidization}
 \description{
 The most important function of the R package sRNAGenetic is the genetic effects analysis of miRNA after plant polyploidization via two methods, and at the same time, it provides various forms of graph related to data characteristics and expression analysis. In terms of two classification methods, one is the calculation of the additive (a) and dominant (d), the other is the evaluation of ELD by comparing the total expression of the miRNA in allotetraploid with the expression level in the parent species.
 }
 \author{
-\strong{Maintainer}: Yu qing Wu \email{Wuyuqing0104@163.com} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
+\strong{Maintainer}: Yu qing Wu \email{wuyuqing0104@163.com} (\href{https://orcid.org/0000-0002-6333-0926}{ORCID})
 
 }
 \keyword{internal}

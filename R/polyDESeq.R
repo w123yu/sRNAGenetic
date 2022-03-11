@@ -98,7 +98,6 @@ polyDESeq <- function(P1_count,P2_count,F1_count,count_threshold = 5,Pvalue = 0.
   F1_vs_P1 <- as.data.frame(DESeq2::results(P1_dds))
   F1_vs_P2 <- as.data.frame(DESeq2::results(P2_dds))
   P2_vs_P1 <- as.data.frame(DESeq2::results(P12_dds))
-  cat("DESeq results have been export to current directory:","\n","F1_vs_P1.csv,F1_vs_P2.csv,P2_vs_P1.csv","\n")
   ###########################
   F1_vs_P1 <- na.omit(F1_vs_P1)
   F1_vs_P2 <- na.omit(F1_vs_P2)

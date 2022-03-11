@@ -5,7 +5,7 @@
 \alias{P2_sRNA_seq}
 \title{Sequences of sRNAs from one species}
 \format{
-A dataframe containing numerous sequences of all sRNAs in "P2" (Maternal parent: Triticum turgidum).
+A dataframe containing numerous sequences of all sRNAs in "P2" (Maternal parent: Triticum turgidum). However, only 400 sRNAs are selected as test data due to the large data of sRNA.
 }
 \source{
 Generated from the Triticum turgidum (AABB).

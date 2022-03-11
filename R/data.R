@@ -4,7 +4,7 @@
 #'
 #' @docType data
 #' @name F1_sRNA_seq
-#' @format A dataframe containing numerous sequences of all sRNAs in "F1" (the S3 generations of Parents (Maternal parent: Triticum turgidum; Male parent: Aegilops tauschii)).
+#' @format A dataframe containing numerous sequences of all sRNAs in "F1" (the S3 generations of Parents (Maternal parent: Triticum turgidum; Male parent: Aegilops tauschii)). However, only 400 sRNAs are selected as test data due to the large data of sRNA.
 #' @description The first column of this data set is all sequences from one speceie for the data statistics
 #' @source Generated from the S3 generations of Triticum turgidum (AABB) and Aegilops tauschii (DD).
 #' @references Li, A., et al., mRNA and Small RNA Transcriptomes Reveal Insights into Dynamic Homoeolog Regulation of Allopolyploid Heterosis in Nascent Hexaploid Wheat. Plant Cell, 2014. 26(5): p. 1878-1900.
@@ -18,7 +18,7 @@ NULL
 #'
 #' @docType data
 #' @name P1_sRNA_seq
-#' @format A dataframe containing numerous sequences of all sRNAs in "P1" (Male parent: Aegilops tauschii).
+#' @format A dataframe containing numerous sequences of all sRNAs in "P1" (Male parent: Aegilops tauschii). However, only 400 sRNAs are selected as test data due to the large data of sRNA.
 #' @description The first column of this data set is all sequences from one speceie for the data statistics
 #' @source Generated from the Aegilops tauschii (DD).
 #' @references Li, A., et al., mRNA and Small RNA Transcriptomes Reveal Insights into Dynamic Homoeolog Regulation of Allopolyploid Heterosis in Nascent Hexaploid Wheat. Plant Cell, 2014. 26(5): p. 1878-1900.
@@ -32,7 +32,7 @@ NULL
 #'
 #' @docType data
 #' @name P2_sRNA_seq
-#' @format A dataframe containing numerous sequences of all sRNAs in "P2" (Maternal parent: Triticum turgidum).
+#' @format A dataframe containing numerous sequences of all sRNAs in "P2" (Maternal parent: Triticum turgidum). However, only 400 sRNAs are selected as test data due to the large data of sRNA.
 #' @description The first column of this data set is all sequences from one species for the data statistics
 #' @source Generated from the Triticum turgidum (AABB).
 #' @references Li, A., et al., mRNA and Small RNA Transcriptomes Reveal Insights into Dynamic Homoeolog Regulation of Allopolyploid Heterosis in Nascent Hexaploid Wheat. Plant Cell, 2014. 26(5): p. 1878-1900.

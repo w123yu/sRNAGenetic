@@ -26,6 +26,8 @@ miVennPlot <- function(P1_RPM,P2_RPM,F1_RPM,rpm_threshold = 1){
   P2_mirna <- func_mirnafiliter(data1 = P2_RPM, threshold = rpm_threshold)
   F1_mirna <- func_mirnafiliter(data1 = F1_RPM, threshold = rpm_threshold)
   x = list(P1=P1_mirna,P2=P2_mirna,F1=F1_mirna)
+  grid::grid.newpage()
+  futile.logger::flog.threshold(futile.logger::ERROR, name = "VennDiagramLogger")
   venn.plot <- VennDiagram::venn.diagram(
     x,euler.d = TRUE,filename = NULL,fontfamily = "serif",col="white",
     fill=c(colors()[616], colors()[38], colors()[468]),

@@ -5,7 +5,7 @@
 \alias{P1_sRNA_seq}
 \title{Sequences of sRNAs from one species}
 \format{
-A dataframe containing numerous sequences of all sRNAs in "P1" (Male parent: Aegilops tauschii).
+A dataframe containing numerous sequences of all sRNAs in "P1" (Male parent: Aegilops tauschii). However, only 400 sRNAs are selected as test data due to the large data of sRNA.
 }
 \source{
 Generated from the Aegilops tauschii (DD).

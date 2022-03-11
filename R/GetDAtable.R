@@ -34,14 +34,31 @@ GetDAtable <- function(P1_RPM,P2_RPM,F1_RPM,rpm_threshold = 1){
   fina_result$d <- fina_result$F1_average-((fina_result$P1_average+fina_result$P2_average)/2)
   fina_result$a <- (fina_result$P1_average-fina_result$P2_average)/2
   fina_result$`abs(d/a)` <- abs(fina_result$d/fina_result$a)
-  additivity <- fina_result[fina_result$`abs(d/a)`<=0.2,]
-  additivity$condition <- "Additivity"
-  partialDom <- fina_result[(fina_result$`abs(d/a)`>0.2)&(fina_result$`abs(d/a)`<=0.8),]
-  partialDom$condition <- "Partial Dominance"
-  Dominance <- fina_result[(fina_result$`abs(d/a)`>0.8)&(fina_result$`abs(d/a)`<=1.2),]
-  Dominance$condition <- "Dominance"
-  Overdominance <- fina_result[fina_result$`abs(d/a)`>1.2,]
-  Overdominance$condition <- "Overdominance"
+  da <- fina_result$`abs(d/a)`
+  if (length(da[da<=0.2]>0)){
+    additivity <- fina_result[fina_result$`abs(d/a)`<=0.2,]
+    additivity$condition <- "Additivity"
+  }else{
+    additivity <- data.frame()
+  }
+  if (length(da[(da>0.2)&(da<=0.2)]>0)){
+    partialDom <- fina_result[(fina_result$`abs(d/a)`>0.2)&(fina_result$`abs(d/a)`<=0.8),]
+    partialDom$condition <- "Partial Dominance"
+  }else{
+    partialDom <- data.frame()
+  }
+  if (length(da[(da>0.8)&(da<=1.2)]>0)){
+    Dominance <- fina_result[(fina_result$`abs(d/a)`>0.8)&(fina_result$`abs(d/a)`<=1.2),]
+    Dominance$condition <- "Dominance"
+  }else{
+    Dominance <- data.frame()
+  }
+  if (length(da[da>1.2]>0)){
+    Overdominance <- fina_result[fina_result$`abs(d/a)`>1.2,]
+    Overdominance$condition <- "Overdominance"
+  }else{
+    Overdominance <- data.frame()
+  }
   result <- rbind(additivity,partialDom,Dominance,Overdominance)
   row.names(result)<- 1:nrow(result)
   return(result)
